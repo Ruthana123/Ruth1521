@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>fast food</title>
+    <link rel="stylesheet" href="file2.css">
+    <script>
+      function validateForm() {
+      var x = document.forms["myForm"] ["fname"].value;
+      if (x =="")
+      alert("Name must be filled out");
+      return false;
+    }
+    </script>
+  </head>
+  <body>
+    <h1>Fast Food</h1>
+    <p>Ces personnes sont la pour assurer le bon fonctionnement du fast food.</p>
+    <h2>Employe(e)s</h2>
+  <ul>
+    <li>Ruth</li>
+    <li>Gerson</li>
+    <li>Wiljimina</li>
+  </ul>
+    <h2>Clients</h2>
+  <ul>
+    <li>Lesly</li>
+    <li>James</li>
+    <li>Emmanuel</li>
+  </ul>
+  <form name="myForm"
+  action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text name="fname">
+    <input type="submit" value="Submit">
+</forms>
+  </body>
+</html>
